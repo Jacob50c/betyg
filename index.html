@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Betyg räknare</title>
+    <link rel="stylesheet" href="betyg.css">
+  </head>
+
+  <body>
+
+
+      <select id="amne">
+        <option value="Ma 1">Matematik 1c</option>
+        <option value="Ma 2">Matematik 2c</option>
+        <option value="Ma 3">Matematik 3c</option>
+      </select>
+
+      <select id="poang">
+        <option value="100">100</option>
+        <option value="100">100</option>
+        <option value="100">100</option>
+      </select>
+
+      <select id="betyg">
+        <option value="15">C</option>
+        <option value="15">C</option>
+        <option value="10">E</option>
+      </select>
+
+      <button type="button" onclick="merit()"> Merit </button>
+
+
+          <script>
+
+
+
+
+            function merit()
+            {
+              // Testing //
+
+            //  var x = document.getElementById("betyg").selectedIndex;
+            //  var y = document.getElementById("betyg").options;
+          //    alert("Index: " + y[2].index);
+
+              alert("it is working");
+              // Testing //
+
+
+              // Merit //
+              var x = 0; var totalm = 0; var opt = 0;
+              var y = document.getElementById("betyg").options;
+
+              for (var i = 0; i <= poang.length; i++) {
+                opt = y[x].index;
+                totalm = totalm + opt
+                x++
+              }
+
+            alert("Poäng: " + totalp + " Merit: " + totalm);
+
+            }
+
+
+          </script>
+  </body>
+
+</html>
